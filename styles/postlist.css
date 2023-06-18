@@ -1,0 +1,361 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-size: 100% 100%;
+  background-color:  #ffeedd;
+}
+
+.body-container {
+    
+    box-sizing: border-box;
+    /* width: 100%; */
+    /* height: 550px; */    
+    background-size: 100% 100%;    
+ }
+ 
+.logo span {
+    position: absolute; 
+    font-size: x-large;
+    font-family: 'Montez', cursive;
+    color: blue;
+    top: 4%;    
+    left: 1%; 
+  }
+  
+  .logo-subheading {
+    font-family: 'Ubuntu Mono', monospace;
+    font-size: x-small;
+    position: absolute;
+    top: 7%;
+    left: 1%;      
+  }
+ 
+  .sign-button-container {
+    position: absolute;
+    top: 5%;
+    left: 89%;  
+   /* width: 50px;
+    height: 30px; */
+  }
+  
+  .sign-button {
+    background-color: blue;
+    color: white;
+    padding: 4px 10px;
+    font-size: 10px;
+  }
+  
+    .post1 {
+        display: flex;
+        background-color: grey;
+
+    }
+    .post-left >div{
+        background-color:gray;
+    }
+  
+
+* {
+box-sizing: border-box;
+}
+
+.lastrow {
+  margin-left: 180px;
+}
+
+.container{
+  margin-left: 250px;
+  margin-top: 80px;  
+}
+
+  /* Remove extra left and right margins, due to padding */
+  .row {
+    margin: 0;        
+  }
+
+  .lastrow {
+    margin-left: 180px;
+  }
+ 
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;    
+  }
+
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 30%;
+  padding: 2;
+  margin-right: 20%; 
+  box-sizing: border-box;
+  flex: 1;  
+  width: calc(35% + 40px);    
+}
+
+.column:first-child {
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   
+}
+
+
+.sub-column {
+  flex: 1;
+  padding: 5px;  
+}
+
+.card {     
+  font-size: xx-small;      
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-right: auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);     
+  margin: 4pt;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+  width: 400px; /* Adjust the width as needed */
+  height: 80px; /* Adjust the height as needed */  
+  background-color: rgb(230, 228, 228);
+  }      
+
+  .card-content {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;                
+    background-color: white;
+  }
+  
+  .card-content p {
+    margin: 0;
+    flex-grow: 1;
+  }
+  
+  .card-icons {
+    display: flex;
+  }
+  
+  .card-icons i {
+    margin-right: 10px;
+    color: gray;
+    cursor: pointer;
+  }
+
+    /* Delete Post Modal */
+    
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    
+    .modal-content {
+      background-color: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      width: 300px;
+      max-width: 80%;
+      margin: 100px auto;
+      text-align: center;
+    }
+    
+    .modal-content h3 {
+      margin-top: 0;
+    }
+    
+    .modal-content button {
+      margin-top: 10px;
+      padding: 8px 16px;
+      background-color: #ff0000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+    
+    /* Update the Yes button style */
+    .modal-content #yesBtn {
+      background-color: #00cc00;
+    }
+
+
+    .popup {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      z-index: 100; /* Ensure pop-up is on top of the overlay */
+    }
+    
+    .popup p {
+      margin: 0;
+      padding: 10px;
+    }
+    
+    .popup-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      size: 10px;
+    }
+    
+    .popup input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: rgb(232, 229, 229);
+      border-width: 0 ;
+    }
+    
+    .popup label {
+      display: block;
+      text-align: left;
+    }
+  
+    .popup p {
+      display: block;
+      text-align: left;
+      font-size: x-large;
+    }
+  
+    .popup button {
+      width: 104%;
+      padding: 5px;
+      margin-bottom: 10px;
+      color: white;
+      background-color: green;
+      border-width: 0 ;
+    }
+    
+  
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      z-index: 99; /* Place the overlay below the pop-up */
+    }
+  
+    .popupsignin {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: center;
+      z-index: 100; /* Ensure pop-up is on top of the overlay */
+    }
+    
+    .popupsignin p {
+      margin: 0;
+      padding: 10px;
+    }
+    
+    .popupsignin-close {
+      position: absolute;
+      top: 30px;
+      right: 30px;
+      cursor: pointer;
+      size: 10px;
+    }
+    
+    .popupsignin input {
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: rgb(232, 229, 229);
+      border-width: 0 ;
+    }
+    
+    .popupsignin label {
+      display: block;
+      text-align: left;
+    }
+  
+    .popupsignin p {
+      display: block;
+      text-align: left;
+      font-size: x-large;
+    }
+  
+    .popupsignin button {
+      width: 104%;
+      padding: 5px;
+      margin-bottom: 10px;
+      color: white;
+      background-color: green;
+      border-width: 0 ;
+    }
+  
+    .nomemm span {
+      display: block;
+      text-align: center;
+    }
+    
+    .popupcreate {
+      display: none;
+      position: fixed;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 600px;
+      height: 300px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: left;
+      z-index: 100; /* Ensure pop-up is on top of the overlay */
+    }
+    .popupcreate p {
+      display: block;
+      text-align: left;
+      font-size: x-small;
+    }
+    .popupcreate-close {
+      position: absolute;
+      top: 15px;
+      right: 30px;
+      cursor: pointer;
+      size: 10px;
+    }
+    .popupcreate input {
+      width: 98.5%;
+      padding: 5px;
+      margin-bottom: 10px;
+      background-color: rgb(232, 229, 229);
+      border-width: 0 ;
+    }
+    .popupcreate label {
+      display: block;
+      text-align: left;
+    }
+  

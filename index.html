@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Header starts here -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home page</title>
+    <link rel="stylesheet" href="https;//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montez&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../styles/common.css"> -->
+    <link rel="stylesheet" href="./styles/index.css">    
+</head>
+<!-- header ends here -->
+
+<body onload="closePopupOnLoad()">
+    <script src="./scripts/index.js"></script>
+
+    <div class="body-container">        
+
+        <p class="logo"><span>ScriBBler</span></p>
+        <p class="logo-subheading">Explore, Imagine, Create</p>
+
+        <div class="sign-button-container">
+            <input class="sign-button" id="signup-button" type="button" onclick="showPopup()"  value="Sign Up">
+            <input class="sign-button" id="signin-button" type="button" onclick="showPopupSignIn()"  value="Sign In">
+        </div>            
+        
+    
+        <form id="popup" class="popup">
+            <span class="popup-close" onclick="closePopup()">&#10006;</span>
+            <p>Get Started</p><hr>            
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <label for="confirm-password">Confirm Password</label>
+            <input type="password" id="confirm-password" placeholder="Re-enter your Password" required>
+            <button onclick="submitForm()">Sign Up</button>
+        </form>    
+  
+
+        <form id="popupsignin" class="popupsignin">
+            <span class="popupsignin-close" onclick="closePopupSignIn()">&#10006;</span>
+            <p>Welome Back!</p><hr>
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter your username" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Enter your password" required>
+            <button onclick="submitFormSignIn()">Sign In</button><br>     
+            Not a member? <a href="javascript:showPopup()">Sign Up</a>                   
+        </form>    
+       
+        <form id="popupcreate" class="popupcreate">
+            <span class="popupcreate-close" onclick="closePopupCreate()">&#10006;</span>
+            Pen Your Post<hr>
+            <lable for="postTitle">Title</lable>
+            <input type="text"  id="postTitle"placeholder="Enter title of your post" name="postTitle" required><br>
+            <label for="postContent" >Contents</label>       
+            <textarea  id="postContent" placeholder="Enter the contents of your post" name="postContents" required></textarea><br>
+            <div class="create-btn"><button type="submit">Create</button></div>
+        </form>        
+
+        <div id="overlay" class="overlay"></div>
+        
+        <div class="post-button-container">
+            <input class="post-button" id="all-post-button" type="button" onclick="redirectToPage()" value="All posts"/>
+            <input class="post-button" id="create-button" type="button" onclick="showPopupCreate()"  value="Create post"/>
+        </div>
+
+    </div>
+       
+</div>
+</body>
+</html>

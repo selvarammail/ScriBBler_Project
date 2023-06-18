@@ -1,0 +1,36 @@
+     h1.modal-heading{
+        font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+     }
+    .form-control1{
+        font-family: 'Courier New', Courier, monospace;
+       display:flex;
+       justify-content: center;
+       align-items: center;
+       
+   }
+  .form-control2{
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-control3{
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .Sign Up-message{
+    font-family: 'Courier New', Courier, monospace;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* .box{
+    width:400px;
+    height: 400px;
+    background-color: aliceblue;
+  } */
